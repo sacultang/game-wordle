@@ -1,0 +1,89 @@
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.board--wrap{
+  margin-bottom: 200px;
+}
+.game-board {
+  display: flex;
+}
+.game-board .board__text {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  margin: 2px;
+  border: 1px solid #ccc;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: flex;
+  text-transform: uppercase;
+}
+.game-board .board__text.good{
+  background-color: #22c566;
+}
+.game-board .board__text.littlegood{
+  background-color: #c0c522;
+}
+.game-board .board__text.bad{
+  background-color: #ccc;
+}
+.game-keyboard {
+  /* background-color: antiquewhite; */
+  text-align: center;
+}
+.game-keyboard .key-btn {
+  width: 70px;
+  height: 70px;
+  margin:10px 0;
+}
+.game-keyboard .thir-row{
+  position: relative;
+}
+.game-keyboard .thir-row .key-btn:last-child {
+  right: 0;
+  position: absolute;
+}
+.game-keyboard .thir-row .key-btn:first-child {
+  left: 0;
+  position: absolute;
+}
+
+.popup {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 9px;
+  display: none;
+  font-size: 40px;
+}
+.popup .popup--btn{
+  width: 80px;
+  height: 40px;
+  border: none;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  border-radius: 5px;
+}
+.popup .popup--btn:active{
+  box-shadow: 3px 3px 0 rgba(0,0,0,0.5);
+  transform: scale(0.9);
+}
+.popup.display-flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
