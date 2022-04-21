@@ -77,7 +77,7 @@ document.addEventListener('keyup', e =>{
         tileNum += 1;
         // console.log(currTile)
       }
-      console.log(tileNum)
+      // console.log(tileNum)
     }
     // console.log(tileNum)
   }
@@ -106,12 +106,12 @@ function gameCheck(){
   for(let i = 0; i < word.length; i++){
     let currTile = rowArr[boardRow].children[i]
     let answer = currTile.textContent;
-    console.log(answer)
+    // console.log(answer)
     if(word[i] === answer){
       // console.log('good')
       currTile.classList.add('good');
       wordCheck += 1;
-      console.log(wordCheck)
+      // console.log(wordCheck)
     }
     else if(word.includes(answer)){
       // console.log('some good')
@@ -121,7 +121,7 @@ function gameCheck(){
       // console.log('bad')
       currTile.classList.add('bad');
     }
-    console.log(rowArr[boardRow].dataset['row'])
+    console.log(rowArr[boardRow].dataset.row)
     // 성공 여부 체크 
     if(wordCheck === word.length){
       gameOver = true;
