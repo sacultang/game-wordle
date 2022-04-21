@@ -7,23 +7,21 @@
   flex-direction: column;
   position: relative;
 }
-.board--wrap{
+.container .board--wrap{
   margin-bottom: 200px;
 }
-.game-board {
+.container .board--wrap .game-board {
   display: flex;
 }
-.game-board .board__text {
+.container .board--wrap .game-board .board__text {
   width: 80px;
   height: 80px;
-  background-color: white;
   margin: 2px;
   border: 1px solid #ccc;
   font-size: 40px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  display: flex;
   text-transform: uppercase;
 }
 .game-board .board__text.good{
